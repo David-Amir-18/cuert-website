@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd v1 && hugo --gc --minify",
+  "outputDirectory": "v1/public",
+  "installCommand": "echo skip"
+}
