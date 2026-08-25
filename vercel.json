@@ -1,5 +1,5 @@
 {
   "buildCommand": "hugo --gc --minify",
-  "outputDirectory": "v1/public",
+  "outputDirectory": "public",
   "installCommand": "echo skip"
 }
