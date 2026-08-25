@@ -8,4 +8,4 @@ A﻿s of Sept 4 2023 we proudly announce the release of our team's website. Than
 
 T﻿his is our homepage!
 
-![](/img/website_home.png)
+<!-- ![](/img/website_home.png) -->
