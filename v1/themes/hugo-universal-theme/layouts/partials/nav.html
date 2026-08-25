@@ -3,13 +3,13 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ "/" | relLangURL }}">
-                    {{ if default false .Site.Params.disabled_logo }}
-                      <h4>{{ .Site.Params.logo_text }}</h4>
-                    {{ else }}
-                      <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" />
-                      <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" />
-                    {{ end }}
-                    <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+                  {{ if default false .Site.Params.disabled_logo }}
+                    <h4>{{ .Site.Params.logo_text }}</h4>
+                  {{ else }}
+                    <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" style="max-height: 90px; width: auto; margin-top: -30px;" />
+                    <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" style="max-height: 60px; width: auto;margin-top: -15px;" />
+                  {{ end }}
+                  <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">

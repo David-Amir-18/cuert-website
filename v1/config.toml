@@ -152,8 +152,9 @@ staticDir = ["static", "v1/static/"]
     disabled_logo = false
     logo_text = "Cairo Uni Eco-Racing Team"
 
-    logo = "img/logo.png"
-    logo_small = "img/logo-small.png"
+    favicon = "img/favicon-goldbg.png"
+    logo = "img/logo-wide-gold.png"
+    logo_small = "img/logo-small-wide-gold.png"
     contact_url = "/contact"
     address = """<p>Faculty of Engineering
         <br>Cairo University Rd.

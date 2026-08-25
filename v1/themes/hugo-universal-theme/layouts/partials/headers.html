@@ -49,8 +49,8 @@
 ` | safeHTML }}
 
 <!-- Favicon and Apple touch icons-->
-<link rel="shortcut icon" href="{{ "img/apple-touch-icon.png" | relURL }}" type="image/x-icon" />
-<link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}" />
+<link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{{ .Site.Params.favicon | relURL }}" />
 
 <!-- owl carousel CSS -->
 <link href="{{ "css/owl.carousel.css" | relURL }}" rel="stylesheet">
