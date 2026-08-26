@@ -55,8 +55,8 @@ function show() {
   // carousel.js
 
 document.addEventListener('DOMContentLoaded', function () {
-  if (!swipableContainer) return;
   var swipableContainer = document.querySelector('.swipable-buttons');
+  if (!swipableContainer) return;
   var startX;
   var scrollLeft;
 
