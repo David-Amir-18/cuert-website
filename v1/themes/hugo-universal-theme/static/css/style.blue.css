@@ -1,3 +1,14 @@
+/* Identity fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Natural Precision';
+    src: url('../fonts/NaturalPrecision.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* Themed colors (updated to gold & black palette) */
 
 :root {
@@ -394,7 +405,7 @@ ul.list-style-none {
 
 .navbar ul.nav>li>a {
     text-transform: uppercase;
-    font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
     font-size: 20px;
     /* font-weight: 600; */
     color: #fff;
@@ -641,7 +652,7 @@ header:first-of-type {
 /* buttons  */
 
 .btn {
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     text-transform: capitalize;
     padding: 8px 12px;
     font-size: 12px;
@@ -892,7 +903,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #intro .item {
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
     height: 100%;
 }
 
@@ -1126,7 +1137,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .panel.sidebar-menu ul.nav.category-menu li a {
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
 }
 
 .panel.sidebar-menu ul.nav ul {
@@ -1140,7 +1151,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 .panel.sidebar-menu ul.nav ul li a {
     position: relative;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Natural Precision", Times, serif;
     font-weight: normal;
     text-transform: none !important;
     display: block;
@@ -1297,7 +1308,7 @@ fieldset[disabled] .btn-template-primary.active {
     margin: 30px 10px 10px -71px;
     color: #fff;
     background-color: var(--primary-accent);
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 .ribbon .theribbon:before,
@@ -2701,7 +2712,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #blog-post .comment .reply {
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 #blog-post .comment.last {
@@ -2882,7 +2893,7 @@ fieldset[disabled] .btn-template-primary.active {
     color: #555555;
     text-align: center;
     text-decoration: none;
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
 }
 
 #productMain .sizes a.active,
@@ -3204,7 +3215,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #footer input[type="email"] {
-    font-family: 'Sen';
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-weight: 400;
     padding: 8px 10px;
     width: calc(100% - 87px);
@@ -3275,7 +3286,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* breadcrumbs */
 
 .breadcrumb {
-    font-family: 'Sen', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     background-color: none;
     letter-spacing: 0.08em;
@@ -3883,7 +3894,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* scaffolding */
 
 body {
-    font-family: 'Sen', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555555;
@@ -3980,7 +3991,7 @@ hr {
 /* labels */
 
 .label {
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -4019,7 +4030,7 @@ label {
     padding-top: 20px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 .pager li {
@@ -4054,7 +4065,7 @@ label {
 
 .pagination {
     margin: 20px 0;
-    font-family: "Sen", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     border-radius: 0;
 }
 
@@ -4140,7 +4151,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+    font-family: "Natural Precision", Helvetica, Arial, sans-serif;
     font-weight: 900;
     color: #333333;
 }
@@ -4455,7 +4466,7 @@ a.list-group-item.active>.badge,
 #cars h5 {
     margin: 0;
     color: var(--primary-accent);
-    font-family: 'Sen';
+    font-family: 'Natural Precision';
     text-transform: capitalize;
 }
 
@@ -4489,7 +4500,7 @@ a.list-group-item.active>.badge,
 
 #cars .properties span {
     font-size: 48px;
-    font-family: 'Pathway Gothic One';
+    font-family: 'Montserrat';
     font-weight: 900;
     color: #000f0e;
 }

@@ -1,3 +1,13 @@
+/* Identity fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Natural Precision';
+    src: url('../fonts/NaturalPrecision.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Reset CSS */
 
 
@@ -43,7 +53,7 @@ a {
     white-space: nowrap;
     cursor: pointer;
     text-align: center;
-    font-family: "Almarai", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -96,7 +106,7 @@ button:hover {
 .heading {
     color: #555;
     text-align: center;
-    font-family: Sen;
+    font-family: "Natural Precision";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -190,7 +200,7 @@ button:hover {
     white-space: nowrap;
     cursor: pointer;
     text-align: center;
-    font-family: "Almarai", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -235,7 +245,7 @@ button:hover {
 .sub-team-p>p {
     color: #555;
     text-align: center;
-    font-family: "Sen", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -271,7 +281,7 @@ button:hover {
 .head-card-title {
     color: #d4af37;
     text-align: center;
-    font-family: "Sen", Arial, Helvetica, sans-serif;
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
@@ -311,7 +321,7 @@ button:hover {
 .head-card-name {
     color: #000;
     text-align: center;
-    font-family: Sen;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -424,17 +434,17 @@ button:hover {
 .member-name {
     color: #000;
     text-align: center;
-    font-family: Sen;
-    font-size: 28px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
 }
 
 .member-role {
     color: #d4af37;
     text-align: center;
-    font-family: Sen;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -499,7 +509,7 @@ button:hover {
 .members-title {
     color: #d4af37;
     text-align: center;
-    font-family: Sen;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
