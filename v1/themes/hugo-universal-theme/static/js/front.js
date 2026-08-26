@@ -304,6 +304,7 @@ function utils () {
 
 /* product detail gallery */
 function productDetailGallery (confDetailSwitch) {
+  if ($('.thumb').length === 0) return
   $('.thumb:first').addClass('active')
   var timer = setInterval(autoSwitch, confDetailSwitch)
 

@@ -6,7 +6,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
-{{ if and .Site.Params.enableGoogleMaps .Site.Params.googleMapsApiKey }}
+{{ if and .Site.Params.enableGoogleMaps .Site.Params.googleMapsApiKey (eq .Section "contact") }}
 <script src="//maps.googleapis.com/maps/api/js?key={{.Site.Params.googleMapsApiKey}}&v=3.exp"></script>
 <script src="{{ "js/hpneo.gmaps.js" | relURL }}"></script>
 <script src="{{ "js/gmaps.init.js" | relURL }}"></script>
@@ -21,6 +21,7 @@
 
 <!-- Team Members page js -->
 <!-- Include Swiper JS used in Team Members page -->
+{{ if eq .Section "team-members" }}
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="{{ "js/team-members.js" | relURL }}"></script>
-
+{{ end }}

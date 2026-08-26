@@ -3,7 +3,7 @@ const membersSlider = new Swiper(".slide-content", {
     spaceBetween: 25,
     grabCursor: true,
     centeredSlides: true,
-    fade: true,
+    // fade: true,
     loop: true,
     slideActiveClass: "swiper-slide-active",
     pagination: {
@@ -55,6 +55,7 @@ function show() {
   // carousel.js
 
 document.addEventListener('DOMContentLoaded', function () {
+  if (!swipableContainer) return;
   var swipableContainer = document.querySelector('.swipable-buttons');
   var startX;
   var scrollLeft;
