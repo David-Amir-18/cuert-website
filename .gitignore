@@ -1,2 +1,8 @@
 public
 .hugo_build.lock
+v1/node_modules
+v1/package-lock.json
+v1/package.json
+v1/public
+v1/optimize-images.js
+v1/static/img_backup_original
