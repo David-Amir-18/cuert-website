@@ -2178,7 +2178,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 .bar.background-image-fixed-1 {
     background: url('../img/fixed-background-1.jpg') center top no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
 }
 
