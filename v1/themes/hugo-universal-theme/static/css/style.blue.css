@@ -1542,12 +1542,12 @@ fieldset[disabled] .btn-template-primary.active {
     /* Firefox 10+, Firefox on Android */
     filter: gray;
     /* IE6-9 */
-    /* -webkit-filter: grayscale(100%); */
+    -webkit-filter: grayscale(100%);
     /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-    /* -webkit-transition: all 0.2s ease-out; */
-    /* -moz-transition: all 0.2s ease-out; */
-    /* transition: all 0.2s ease-out; */
-    /* padding: 0 20px */
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    padding: 0 20px
 }
 
 .customers .item img:hover {
@@ -1761,7 +1761,7 @@ fieldset[disabled] .btn-template-primary.active {
     text-align: center;
     margin-bottom: 40px;
 }
-
+/*
 .box-simple .icon {
     color: var(--primary-accent);
     border-color: var(--primary-accent);
@@ -4506,3 +4506,4 @@ a.list-group-item.active>.badge,
     display: flex;
     justify-content: space-between;
 }
+*/
