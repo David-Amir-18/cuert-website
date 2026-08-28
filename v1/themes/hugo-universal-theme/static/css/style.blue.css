@@ -1950,7 +1950,7 @@ fieldset[disabled] .btn-template-primary.active {
     filter: alpha(opacity=0);
     background: var(--primary-accent);
 }
-/*
+
 .box-image-text .top .name {
     position: absolute;
     width: 100%;
@@ -1977,7 +1977,7 @@ fieldset[disabled] .btn-template-primary.active {
     color: #fff;
     text-decoration: none;
 }
-*/
+/*
 .box-image-text .top .text {
     position: absolute;
     width: 100%;
@@ -1993,7 +1993,7 @@ fieldset[disabled] .btn-template-primary.active {
     color: #fff;
     padding: 0 20px;
 }
-
+*/
 .box-image-text .content h3,
 .box-image-text .content h4 {
     text-transform: capitalize;
