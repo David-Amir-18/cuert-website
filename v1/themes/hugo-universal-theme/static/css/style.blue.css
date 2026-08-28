@@ -1542,12 +1542,12 @@ fieldset[disabled] .btn-template-primary.active {
     /* Firefox 10+, Firefox on Android */
     filter: gray;
     /* IE6-9 */
-    -webkit-filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
     /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    padding: 0 20px
+    /* -webkit-transition: all 0.2s ease-out; */
+    /* -moz-transition: all 0.2s ease-out; */
+    /* transition: all 0.2s ease-out; */
+    /* padding: 0 20px */
 }
 
 .customers .item img:hover {
@@ -1564,7 +1564,6 @@ fieldset[disabled] .btn-template-primary.active {
 .testimonials .item {
     list-style-type: none;
     background: #fff;
-    /* padding-bottom: 60px; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1601,22 +1600,12 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .testimonials .item .testimonial .bottom {
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* width: 100%; */
-    /* -webkit-box-sizing: border-box; */
     -moz-box-sizing: border-box;
-    /* box-sizing: border-box; */
-    /* padding: 20px; */
-    /* height: 50px; */
 }
 
 .testimonials .item .testimonial .bottom .icon {
     color: var(--primary-accent);
     font-size: 30px;
-    /* float: left; */
-    /* width: 20%; */
 }
 
 .testimonials .item .testimonial .name-picture {}
@@ -1633,7 +1622,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 .testimonials .item .testimonial .name-picture img,
 .box-image-text .image img {
-    /* float: right; */
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(55, 84, 170, 0.1);
@@ -1641,8 +1629,6 @@ fieldset[disabled] .btn-template-primary.active {
     height: 290px;
     object-fit: cover;
     padding: 4px;
-    /* margin-left: 0; */
-    /* margin: 0; */
 }
 
 .team-member {
@@ -1793,6 +1779,7 @@ fieldset[disabled] .btn-template-primary.active {
     font-weight: 800;
     letter-spacing: 0.08em;
 }
+
 
 .box-simple h3 a {
     color: #555555;
@@ -2041,7 +2028,6 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 
-/* universal box */
 
 .box {
     background: #ffffff;
@@ -2178,7 +2164,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 .bar.background-image-fixed-1 {
     background: url('../img/fixed-background-1.jpg') center top no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
 }
 
@@ -2651,7 +2636,6 @@ fieldset[disabled] .btn-template-primary.active {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    /* number of lines to show */
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
@@ -3091,7 +3075,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 #footer {
     background: #000000;
-    /* black footer */
     padding: 70px 0;
     color: #999999;
 }
@@ -3226,7 +3209,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 #copyright {
     background: #000000;
-    /* black copyright bar */
     color: #ffffff;
     padding: 18px 0;
     font-size: 12px;
@@ -3280,10 +3262,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 
-/* Original Boostrap template overwrite */
 
 
-/* breadcrumbs */
 
 .breadcrumb {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -3293,7 +3273,6 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 
-/* nav */
 
 .nav>li>a {
     margin: 29px 32px;
@@ -3363,7 +3342,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 .nav-tabs.nav-justified>li>a {
     text-align: center;
-    /*margin-bottom: 5px;*/
 }
 
 .nav-tabs.nav-justified>.dropdown .dropdown-menu {
@@ -3433,7 +3411,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 .nav-justified>li>a {
     text-align: center;
-    /*margin-bottom: 5px;*/
 }
 
 .nav-justified>.dropdown .dropdown-menu {
@@ -3475,11 +3452,9 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 
-/* navbar */
 
 .navbar {
     position: relative;
-    /* min-height: 62px; */
     margin-bottom: 0;
     border-bottom: 1px solid transparent;
     padding: 12px 0;
@@ -3605,7 +3580,6 @@ fieldset[disabled] .btn-template-primary.active {
     float: left;
     padding: 22px 15px;
     font-size: 18px;
-    /* line-height: 20px; */
     height: auto;
 }
 
@@ -3647,9 +3621,6 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .navbar-nav>li>a {
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-    /* line-height: 20px; */
 }
 
 @media (max-width: 767px) {
@@ -3675,8 +3646,6 @@ fieldset[disabled] .btn-template-primary.active {
         float: left;
     }
     .navbar-nav>li>a {
-        /* padding-top: 21px; */
-        /* padding-bottom: 21px; */
     }
     .navbar-nav.navbar-right:last-child {
         margin-right: -15px;
@@ -3800,8 +3769,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    /* color: #555555; */
-    /* background-color: var(--navbar-focus); */
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -3891,7 +3858,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 
-/* scaffolding */
 
 body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -3928,7 +3894,6 @@ hr {
 }
 
 
-/* breadcrumbs */
 
 .breadcrumb {
     padding: 20px 0;
@@ -3955,7 +3920,6 @@ hr {
 }
 
 
-/* dropdowns */
 
 .dropdown-menu {
     z-index: 1000;
@@ -3988,7 +3952,6 @@ hr {
 }
 
 
-/* labels */
 
 .label {
     font-family: "Natural Precision", Helvetica, Arial, sans-serif;
@@ -3998,7 +3961,6 @@ hr {
 }
 
 
-/* forms.less */
 
 label {
     font-weight: normal;
@@ -4022,7 +3984,7 @@ label {
 }
 
 
-/* pager*/
+
 
 .pager {
     margin: 20px 0;
@@ -4061,7 +4023,7 @@ label {
 }
 
 
-/* pagination */
+
 
 .pagination {
     margin: 20px 0;
@@ -4112,7 +4074,7 @@ label {
 }
 
 
-/* responsive utilities */
+
 
 @media (max-width: 767px) {
     .text-center-xs {
@@ -4137,7 +4099,7 @@ label {
 }
 
 
-/* type */
+
 
 h1,
 h2,
@@ -4352,12 +4314,7 @@ a.list-group-item.active>.badge,
 }
 
 
-/*!
- * Yamm!3 - Yet another megamenu for Bootstrap 3
- * http://geedmo.github.com/yamm3
- *
- * @geedmo - Licensed under the MIT license
- */
+
 
 .yamm .nav,
 .yamm .collapse,
@@ -4393,7 +4350,7 @@ a.list-group-item.active>.badge,
 }
 
 
-/* Cars Page */
+
 
 #cars .bar {
     display: flex;
@@ -4513,7 +4470,7 @@ a.list-group-item.active>.badge,
     margin-top: 10px;
     padding: 24px;
     background: #f9e6b8;
-    /* light gold highlight */
+    
     border-radius: 4px;
     height: calc(100% - 170px);
 }
