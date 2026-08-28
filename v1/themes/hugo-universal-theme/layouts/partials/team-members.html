@@ -1,247 +1,202 @@
-<div>
+<div class="team-page">
 
+  {{/* -- COVER ----------------------------------------------- */}}
   <div class="cover-image">
     <img src="/img/cover.jpg" alt="cover" />
   </div>
 
-  <h1 class="main-heading heading">Meet Our Board of Directors</h1>
+  {{/* -- HIGH BOARD ------------------------------------------- */}}
+  {{ $allPages := where site.RegularPages "Type" "eq" "team-members" }}
+  {{ $boardPage := index (where $allPages "Params.isDirectorsBoard" true) 0 }}
 
-  <!-- Board of Directors is a team but it has a flag "isDirectorsBoard" -->
-  {{ $posts := .Paginate (where site.RegularPages "Type" "eq" "team-members") }}
-  {{ range $posts.Pages }}
-  {{ if eq .Params.isDirectorsBoard true }}
-  <div id="{{ .Params.team }}">
+  {{ with $boardPage }}
+  <div class="main-heading heading">Meet Our Board of Directors</div>
+  <section class="team-section board-section">
 
-    <div class="head-card">
-      <h3 class="head-card-title">Racing Team Manager</h3>
-      <div class="head-card-img-div">
-        <img src="{{ .Params.head.image }}" alt="head-img" />
-      </div>
-      <p class="head-card-name">{{ .Params.head.name }}</p>
-      <ul class="icons-list">
-        {{ if isset .Params.head "email" }}
-        <li class="icons-list-item">
-          <a href="mailto:{{ .Params.head.email }}">
-            <i class="fas fa-envelope"></i></a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "linkedin" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.linkedin }}" target="_blank">
-            <i class="fab fa-linkedin-in"></i></a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "github" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.github }}" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "facebook" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.facebook }}" target="_blank">
-            <i class="fab fa-facebook-f"></i></a>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-
-    <div class="head-card-title">Directors</div>
-
-
-    <!-- start slider -->
-    <div class="center-slider">
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            {{ range .Params.members }}
-            <div class="member-card swiper-slide">
-              <div class="image-content">
-                <div class="member-card-image">
-                  <img src="{{ .image }}" alt="member-img" class="member-card-img" />
-                </div>
-              </div>
-
-              <div class="member-card-content">
-                <h4 class="member-name">{{ .name }}</h4>
-                <p class="member-role">{{ .role }}</p>
-                <ul class="icons-list">
-                  {{ if isset . "email" }}
-                  <li class="icons-list-item">
-                    <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "linkedin" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .linkedin }}" target="_blank">
-                      <i class="fab fa-linkedin-in"></i></a>
-                    </a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "github" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .github }}" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "facebook" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .facebook }}" target="_blank">
-                      <i class="fab fa-facebook-f"></i></a>
-                    </a>
-                  </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-            {{ end }}
+    {{/* Team Manager � single centered square card */}}
+    <div class="manager-card-wrapper">
+      <div class="sq-card manager-sq-card">
+        <div class="sq-card-img">
+          <img src="{{ .Params.head.image }}" alt="{{ .Params.head.name }}" />
+        </div>
+        <div class="sq-card-info">
+          <p class="sq-card-name">{{ .Params.head.name }}</p>
+          <div class="sq-card-role-row">
+            <p class="sq-card-role">Team Manager</p>
+            {{ template "social-icons" .Params.head }}
           </div>
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="board-grid">
+  {{ range .Params.directors }}
+  <div class="sq-card">
+    <div class="sq-card-img">
+      <img src="{{ .image }}" alt="{{ .name }}" />
+    </div>
+    <div class="sq-card-info">
+      <p class="sq-card-name">{{ .name }}</p>
+      <div class="sq-card-role-row">
+        <p class="sq-card-role">{{ .role }}</p>
+        {{ template "social-icons" . }}
       </div>
     </div>
   </div>
   {{ end }}
+</div>
+
+  </section>
   {{ end }}
 
+  {{/* -- SUB-TEAMS CAROUSEL ----------------------------------- */}}
+  {{ $subTeamPages := where $allPages "Params.isDirectorsBoard" false }}
+  {{ $directors := slice "Mechanical" "Electrical" "Autonomous" "Operations" "Communications" }}
 
+  <section class="team-section">
+    <div class="directors-carousel-header">
+      <div class="swiper-button-prev directors-prev"></div>
+      <h1 class="main-heading heading" id="directors-heading">Sub-Teams</h1>
+      <div class="swiper-button-next directors-next"></div>
+    </div>
+    <div class="directors-carousel swiper" id="directors-swiper">
+      <div class="swiper-wrapper">
 
-  <h1 class="main-heading heading">Meet Our Sub-Teams</h1>
+        {{ range $di, $dirName := $directors }}
+        {{ $dirTeams := where $subTeamPages "Params.director" $dirName }}
+        {{ if $dirTeams }}
+        <div class="swiper-slide director-slide" data-director="{{ $dirName }}">
+          <h2 class="director-slide-heading">{{ $dirName }} Director</h2>
 
+          {{ if eq $dirName "Technical" }}
+            {{ $subdirectors := slice "Electrical" "Autonomous" }}
+            {{ range $subdirectors }}
+            {{ $subDirName := . }}
+            {{ $subDirTeams := where $dirTeams "Params.subdirector" $subDirName }}
+            {{ if $subDirTeams }}
+            <h3 class="subdirector-slide-heading">{{ $subDirName }}</h3>
+            <div class="subteams-inner-swiper swiper">
+              <div class="swiper-wrapper">
+                {{ range $subDirTeams }}
+                <div class="swiper-slide subteam-card"
+                     data-team-id="{{ $subDirName | urlize }}-{{ .Params.team | urlize }}">
+                  <p class="subteam-card-name">{{ .Params.team }}</p>
+                </div>
+                {{ end }}
+              </div>
+              <div class="swiper-button-next subteam-next"></div>
+              <div class="swiper-button-prev subteam-prev"></div>
+            </div>
+            {{ end }}
+            {{ end }}
+          {{ else }}
+            <div class="subteams-inner-swiper swiper">
+              <div class="swiper-wrapper">
+                {{ range $dirTeams }}
+                <div class="swiper-slide subteam-card"
+                     data-team-id="{{ $dirName | urlize }}-{{ .Params.team | urlize }}">
+                  <p class="subteam-card-name">{{ .Params.team }}</p>
+                </div>
+                {{ end }}
+              </div>
+              <div class="swiper-button-next subteam-next"></div>
+              <div class="swiper-button-prev subteam-prev"></div>
+            </div>
+          {{ end }}
 
+        </div>
+        {{ end }}
+        {{ end }}
 
+      </div>
+    </div>
 
-  <div class="swipable-buttons">
-    <button class="arrow left-arrow" onclick="manualScroll(-1)">←</button>
-    <div class="button-teams">
-      {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
-      {{ range $teamPages }}
-      {{ if or (eq .Params.isDirectorsBoard nil) (eq .Params.isDirectorsBoard false) }}
-      <button class="team-button" id="{{ .Params.team }}"> {{ .Params.team }} Team </button>
+    {{/* Detail panel */}}
+    <div class="subteam-detail hide" id="subteam-detail">
+      <div class="subteam-detail-inner"></div>
+    </div>
+
+    {{/* Hidden data store */}}
+    <div class="subteam-data" style="display:none">
+      {{ range $dirName := $directors }}
+      {{ $dirTeams := where $subTeamPages "Params.director" $dirName }}
+      {{ if eq $dirName "Technical" }}
+        {{ $subdirectors := slice "Electrical" "Autonomous" }}
+        {{ range $subdirectors }}
+        {{ $subDirName := . }}
+        {{ $subDirTeams := where $dirTeams "Params.subdirector" $subDirName }}
+        {{ range $subDirTeams }}
+        <div data-team-id="{{ $subDirName | urlize }}-{{ .Params.team | urlize }}">
+          {{ template "team-detail-block" . }}
+        </div>
+        {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ range $dirTeams }}
+        <div data-team-id="{{ $dirName | urlize }}-{{ .Params.team | urlize }}">
+          {{ template "team-detail-block" . }}
+        </div>
+        {{ end }}
       {{ end }}
       {{ end }}
     </div>
-    <button class="arrow right-arrow" onclick="manualScroll(1)">→</button>
-  </div>
 
-
-
-  <!-- {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
-  {{ range $teamPages }}
-  <button class="team-button" id="{{ .Params.team }}"> {{ .Params.team }} Team </button>
-  {{ end }} -->
-
-  <!-- starting of define teams -->
-
-  {{ $teamPages := where site.RegularPages "Type" "eq" "team-members" }}
-  {{ range $teamPages }}
-  {{ if or (eq .Params.isDirectorsBoard nil) (eq .Params.isDirectorsBoard false) }}
-
-  <div id="{{ .Params.team }}" class="hide sub-team">
-    <h2 class="sub-heading heading"> {{ .Params.team }}</h2>
-    <div class="sub-team-p">
-      <!-- {{ .Params.isDirectorsBoard }} -->
-      {{ .Content }}
-    </div>
-
-    <div class="head-card">
-      <h3 class="head-card-title">{{ .Params.team }} head</h3>
-      <div class="head-card-img-div">
-        <img src="{{ .Params.head.image }}" alt="head-img" />
-      </div>
-      <p class="head-card-name">{{ .Params.head.name }}</p>
-      <ul class="icons-list">
-        {{ if isset .Params.head "email" }}
-        <li class="icons-list-item">
-          <a href="mailto:{{ .Params.head.email }}">
-            <i class="fas fa-envelope"></i></a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "linkedin" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.linkedin }}" target="_blank">
-            <i class="fab fa-linkedin-in"></i></a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "github" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.github }}" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        {{ end }}
-        {{ if isset .Params.head "facebook" }}
-        <li class="icons-list-item">
-          <a href="{{ .Params.head.facebook }}" target="_blank">
-            <i class="fab fa-facebook-f"></i></a>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-
-    <div class="head-card-title">Members</div>
-
-
-    <!-- start slider -->
-    <div class="center-slider">
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            {{ range .Params.members }}
-            <div class="member-card swiper-slide">
-              <div class="image-content">
-                <div class="member-card-image">
-                  <img src="{{ .image }}" alt="member-img" class="member-card-img" />
-                </div>
-              </div>
-
-              <div class="member-card-content">
-                <h4 class="member-name">{{ .name }}</h4>
-                <p class="member-role">{{ .role }}</p>
-                <ul class="icons-list">
-                  {{ if isset . "email" }}
-                  <li class="icons-list-item">
-                    <a href="mailto:{{ .email }}"><i class="fas fa-envelope"></i></a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "linkedin" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .linkedin }}" target="_blank">
-                      <i class="fab fa-linkedin-in"></i></a>
-                    </a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "github" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .github }}" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  {{ end }}
-                  {{ if isset . "facebook" }}
-                  <li class="icons-list-item">
-                    <a href="{{ .facebook }}" target="_blank">
-                      <i class="fab fa-facebook-f"></i></a>
-                    </a>
-                  </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </div>
-  {{ end }}
-  {{ end }}
+  </section>
 
 </div>
+
+{{/* -- REUSABLE: social icons ------------------------------- */}}
+{{ define "social-icons" }}
+<ul class="icons-list">
+  {{ with .email }}<li class="icons-list-item"><a href="mailto:{{ . }}"><i class="fas fa-envelope"></i></a></li>{{ end }}
+  {{ with .linkedin }}<li class="icons-list-item"><a href="{{ . }}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+  {{ with .github }}<li class="icons-list-item"><a href="{{ . }}" target="_blank"><i class="fab fa-github"></i></a></li>{{ end }}
+  {{ with .facebook }}<li class="icons-list-item"><a href="{{ . }}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+</ul>
+{{ end }}
+
+{{/* -- REUSABLE: team detail block -------------------------- */}}
+{{ define "team-detail-block" }}
+<div class="subteam-detail-content">
+  {{ with .Content }}<div class="sub-team-p">{{ . }}</div>{{ end }}
+
+  <div class="detail-board-row">
+    {{/* Leader card — left side */}}
+    <div class="detail-leader-grid">
+      <div class="sq-card detail-leader-card">
+        <div class="sq-card-img">
+          <img src="{{ .Params.head.image }}" alt="{{ .Params.head.name }}" />
+        </div>
+        <div class="sq-card-info">
+          <p class="sq-card-name">{{ .Params.head.name }}</p>
+          <div class="sq-card-role-row">
+            <p class="sq-card-role">{{ .Params.team }} Leader</p>
+            {{ template "social-icons" .Params.head }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/* Members grid — right side */}}
+    {{ with .Params.members }}
+    <div class="members-sq-grid">
+      {{ range . }}
+      <div class="sq-card">
+        <div class="sq-card-img">
+          <img src="{{ .image }}" alt="{{ .name }}" />
+        </div>
+        <div class="sq-card-info">
+          <p class="sq-card-name">{{ .name }}</p>
+          <div class="sq-card-role-row">
+            <p class="sq-card-role">{{ .role }}</p>
+            {{ template "social-icons" . }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}

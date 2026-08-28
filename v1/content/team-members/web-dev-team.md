@@ -1,6 +1,7 @@
 ---
 team: Web Development
 isDirectorsBoard: false
+director: Operations
 head:
   name: Amr Hany
   image: /img/photo-amr-hany.jpg

@@ -6,3 +6,5 @@ v1/package.json
 v1/public
 v1/optimize-images.js
 v1/static/img_backup_original
+delete-unused-images.ps1
+unused-images.txt

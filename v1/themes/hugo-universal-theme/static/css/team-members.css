@@ -8,510 +8,447 @@
     font-display: swap;
 }
 
-/* Reset CSS */
+ul { list-style: none; }
+a  { text-decoration: none; }
 
+/* Remove Bootstrap container constraints on team-members page */
+.team-page ~ * { padding: 0; }
+.team-page { margin-left: -15px; margin-right: -15px; }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Cover image */
+.cover-image { display: flex; width: 100%; height: 500px; }
+.cover-image img { width: 100%; height: 100%; object-fit: cover; }
 
-html {
-    font-size: 16px;
-} */
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.swipable-buttons {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-
-/* #Electrical, #Web,#Operation ,#LogisticsAndPlanning,#Mechanical,#Autonomous{
-    display: none;
-  } */
-
-.button-teams button {
-    background-color: #d4af37;
-    /* gold */
-    color: #000;
-    padding: 1rem;
-    border-radius: 35px;
-    border-color: #d4af37;
-    /* margin-top: 10px; */
-    margin-bottom: 10px;
-    margin-left: 20px;
-    white-space: nowrap;
-    cursor: pointer;
-    text-align: center;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-button:hover {
-    opacity: 0.9;
-    transform: scale(1.09);
-}
-
-.button-teams {
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-
-/* body {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-  } */
-
-
-/* header {
-    width: 100%;
-    height: 200px;
-    background-color: #0a322f;
-    display: grid;
-    place-items: center;
-    font-size: 2rem;
-    color: #fff;
-} */
-
-.cover-image {
-    display: flex;
-    width: 100%;
-    height: 600px;
-}
-
-.cover-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* object-position: top; */
-}
-
+/* Page headings � reduced from 100px to 30px */
 .heading {
     color: #555;
     text-align: center;
     font-family: "Natural Precision";
-    font-size: 40px;
-    font-style: normal;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.2;
 }
-
-@media (max-width: 767px) {
-    .heading {
-        font-size: 24px;
-        line-height: 1.2;
-    }
-}
-
-
-/* main heading of page */
+@media (max-width: 767px) { .heading { font-size: 24px; } }
 
 .main-heading {
     text-align: center;
-    margin: 100px auto;
-    padding: 1rem;
+    margin: 30px auto 20px;
+    padding: 0;
 }
 
-@media (max-width: 767px) {
-    .main-heading {
-        margin: 25px auto;
-    }
-}
-
-
-/* end of main header */
-
-
-/* start of sub teams list  */
-
-.sub-team-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    flex-wrap: wrap;
-}
-
-.sub-team-list-overflow {
-    overflow-x: auto;
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    flex-wrap: nowrap;
-    /* margin-bottom: 50px; */
-    margin: 50px auto;
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: 100%;
-}
-
-@media (max-width: 767px) {
-    .sub-team-list-overflow {
-        margin: 0px auto;
-    }
-}
-
-.sub-team-list-overflow::-webkit-scrollbar {
-    /* WebKit */
-    /* width: 3px; */
-    height: 6px;
-    visibility: hidden;
-}
-
-.sub-team-list-overflow:hover {
-    scrollbar-width: auto;
-    -ms-overflow-style: auto;
-}
-
-.sub-team-list-overflow:hover::-webkit-scrollbar {
-    visibility: visible;
-    background-color: #fff;
-}
-
-.sub-team-list-overflow:hover::-webkit-scrollbar-thumb {
-    background-color: #d4af37;
-    border-radius: 10px;
-}
-
-.sub-team-list-item {
-    background-color: #d4af37;
-    color: #000;
-    padding: 1rem;
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    white-space: nowrap;
-    cursor: pointer;
-    text-align: center;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.sub-team-list-item:hover {
-    opacity: 0.85;
-}
-
-@media (max-width: 767px) {
-    .sub-team-list-item {
-        font-size: 16px;
-        line-height: 1.2;
-    }
-}
-
-
-/* end of sub teams list */
-
-
-/* start of sub team heading */
-
-.sub-heading {
-    text-align: center;
-    margin: 30px auto;
-    padding: 1rem;
-}
-
-@media (max-width: 767px) {
-    .sub-heading {
-        margin: 25px auto;
-    }
-}
-
-
-/* end of sub team heading */
-
-
-/* start of sub team description */
-
-.sub-team-p>p {
+/* Sub-team description */
+.sub-team-p > p {
     color: #555;
     text-align: center;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    /* line-height: 40px; */
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+    margin-bottom: 16px;
     padding: 0 1rem;
 }
 
-@media (max-width: 767px) {
-    .sub-team-p {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-}
-
-
-/* end of sub team description */
-
-
-/* start of sub-team head card */
-
+/* Head card (shared base) */
 .head-card {
     display: flex;
     flex-direction: column;
-    width: -moz-fit-content;
     width: fit-content;
     align-items: center;
     justify-content: center;
-    margin: 25px auto;
+    margin: 8px auto;
 }
-
-.head-card-title {
-    color: #d4af37;
-    text-align: center;
-    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    .head-card-title {
-        font-size: 24px;
-        line-height: 1.2;
-    }
-}
-
 .head-card-img-div {
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 0 auto 6px;
 }
-
-@media (max-width: 767px) {
-    .head-card-img-div {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.head-card-img-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+.head-card-img-div img { width: 100%; height: 100%; object-fit: cover; }
 .head-card-name {
     color: #000;
     text-align: center;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    font-style: normal;
+    font-size: 18px;
     font-weight: 700;
-    line-height: normal;
-    text-align: center;
-    margin: 8px auto;
+    margin: 4px auto;
 }
-
-@media (max-width: 767px) {
-    .head-card-name {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-}
-
-.icons-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.icons-list-item {
-    width: 27px;
-    height: 27px;
-}
-
-@media (max-width: 767px) {
-    .icons-list-item {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-.icons-list-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* end of sub-team head card */
-
-
-/* start slider */
-
-.center-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 200px;
-}
-
-.slide-container {
-    /* max-width: 1120px; */
-    width: 100%;
-    padding: 40px 0;
-    /* height: fit-content; */
-}
-
-.slide-content {
-    /* height: fit-content; */
-    overflow: hidden;
-    margin: 0 40px;
-}
-
-.swiper-slide-active {
-    transition: 0.5s ease-in-out;
-}
-
-.member-card {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.member-card:not(.swiper-slide-active) {
-    opacity: 0.5;
-    transform: scale(0.9);
-    transition: 0.5s ease-in-out;
-}
-
-.member-card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 3px;
-}
-
-.member-card-image .member-card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.member-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.member-name {
-    color: #000;
-    text-align: center;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.member-role {
+.head-card-role {
     color: #d4af37;
     text-align: center;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 auto 4px;
 }
-
-.swiper-navBtn {
+.head-card-title {
     color: #d4af37;
+    text-align: center;
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.swiper-navBtn::after,
-.swiper-navBtn::before {
-    font-size: 40px;
-}
+/* Social icons */
+.icons-list { display: flex; justify-content: center; align-items: center; gap: 0.6rem; }
+.icons-list-item { width: 22px; height: 22px; }
+.icons-list-item img { width: 100%; height: 100%; object-fit: cover; }
 
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: #d4af37;
-    opacity: 0.8;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #d4af37;
-}
-
-@media screen and (max-width: 767px) {
-    .slide-content {
-        margin: 0 10px;
-    }
-    .swiper-navBtn {
-        display: none;
-    }
-}
-
-
-/* end slider */
-
-
-/* select sections that have id attribute */
-
-
-/* section[id] {
-    padding: 1rem;
-  } */
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
+/* Utility */
+.hide { display: none; }
+.show { display: block; }
 
 .members-title {
     color: #d4af37;
     text-align: center;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-style: normal;
+    font-size: 22px;
     font-weight: 700;
-    line-height: normal;
+    margin: 8px 0 4px;
+}
+
+/* -- Team Manager ------------------------------------------- */
+.manager-card-wrapper { display: flex; justify-content: center; margin-bottom: 10px; }
+.manager-card .head-card-img-div { width: 160px; height: 160px; }
+
+/* -- Directors row ------------------------------------------ */
+.directors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem 1rem;
+}
+.director-card { flex: 0 0 auto; width: 160px; }
+.director-card .head-card-img-div { width: 140px; height: 140px; }
+.director-card .head-card-name { font-size: 16px; }
+
+/* -- Sub-directors row -------------------------------------- */
+.subdirectors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1rem 0.5rem;
+}
+.subdirector-card { flex: 0 0 auto; width: 130px; }
+.subdirector-card .head-card-img-div { width: 110px; height: 110px; }
+.subdirector-card .head-card-name { font-size: 14px; }
+
+/* -- Directors carousel header ------------------------------ */
+.directors-carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 20px auto 8px;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.directors-carousel-header .main-heading {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
+.directors-carousel-header .swiper-button-next,
+.directors-carousel-header .swiper-button-prev {
+    position: static;
+    margin: 0;
+    color: #d4af37;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+.directors-carousel-header .swiper-button-next::after,
+.directors-carousel-header .swiper-button-prev::after { font-size: 20px; }
+
+/* -- Outer directors carousel ------------------------------- */
+.directors-carousel {
+    position: relative;
+    padding: 0 10px 8px;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.director-slide { padding: 6px 10px 10px; }
+.director-slide-heading {
+    color: #d4af37;
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 4px 0 12px;
+}
+.subdirector-slide-heading {
+    color: #888;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* -- Inner sub-team carousel -------------------------------- */
+.subteams-inner-swiper {
+    position: relative;
+    padding: 6px 40px 10px;
+    /* no margin-bottom � the slide grows only as tall as needed */
+}
+.subteams-inner-swiper .swiper-wrapper { align-items: center; }
+.subteams-inner-swiper .subteam-next,
+.subteams-inner-swiper .subteam-prev { color: #d4af37; }
+.subteams-inner-swiper .subteam-next::after,
+.subteams-inner-swiper .subteam-prev::after { font-size: 18px; }
+
+/* Sub-team pill */
+.subteam-card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 35px;
+    border: 2px solid #d4af37;
+    background-color: #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: auto !important;
+    height: auto !important;
+}
+.subteam-card:hover,
+.subteam-card.active { background-color: #d4af37; transform: translateY(-2px); }
+.subteam-card:hover .subteam-card-name,
+.subteam-card.active .subteam-card-name { color: #000; }
+.subteam-card-name {
+    color: #d4af37;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* -- Detail panel ------------------------------------------- */
+.subteam-detail {
+    margin: 12px auto 0;
+    max-width: 1100px;
+    padding: 20px 20px 30px;
+    border-top: 2px solid #d4af37;
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.team-leader-row { display: flex; justify-content: center; margin: 10px 0 8px; }
+.leader-card .head-card-img-div { width: 150px; height: 150px; }
+
+/* Members grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.2rem;
+    padding: 0.5rem 1.5rem 1.5rem;
+    justify-items: center;
+    align-items: start;
+}
+.member-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.member-grid-img-div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+}
+.member-grid-img-div img { width: 100%; height: 100%; object-fit: cover; }
+.member-grid-card .member-name { font-size: 13px; font-weight: 600; margin: 2px 0; color: #000; font-family: "Montserrat", sans-serif; }
+.member-grid-card .member-role { font-size: 12px; font-weight: 500; margin-bottom: 3px; color: #d4af37; font-family: "Montserrat", sans-serif; }
+
+/* -- Responsive --------------------------------------------- */
+@media (max-width: 767px) {
+    .team-page { margin-left: -15px; margin-right: -15px; }
+    .cover-image { height: 300px; }
+    .directors-row { gap: 1rem; padding: 0 0.5rem 0.75rem; }
+    .director-card { width: 110px; }
+    .director-card .head-card-img-div { width: 90px; height: 90px; }
+    .subdirectors-row { gap: 0.75rem; }
+    .subdirector-card { width: 95px; }
+    .subdirector-card .head-card-img-div { width: 78px; height: 78px; }
+    .directors-carousel { padding: 0 5px 6px; }
+    .director-slide-heading { font-size: 20px; }
+    .subteams-inner-swiper { padding: 4px 28px 8px; }
+    .members-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 1rem; padding: 0.5rem; }
+    .member-grid-img-div { width: 78px; height: 78px; }
+    .directors-carousel-header { margin: 16px auto 6px; }
+    .manager-card .head-card-img-div { width: 120px; height: 120px; }
+}
+
+
+/* -- Square cards � shared style ---------------------------- */
+.sq-card {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px 8px 24px 8px;
+}
+.sq-card-img {
+    width: 100%;
+    height: 100%;
+}
+.sq-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.sq-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 14px 14px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 10%, transparent 100%);
+    text-align: left;
+}
+.sq-card-name {
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
+    font-size: clamp(13px, 1.6vw, 20px);
+    font-weight: 700;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 2px;
+    line-height: 1.2;
+}
+.sq-card-role-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.sq-card-role {
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 1.1vw, 14px);
+    font-weight: 400;
+    color: rgba(212,175,55,0.95);
+    margin: 0;
+}
+.sq-card-role-row .icons-list { justify-content: flex-start; gap: 5px; }
+.sq-card-role-row .icons-list-item { width: 13px; height: 13px; }
+.sq-card-role-row .icons-list-item a i { font-size: 11px; color: rgba(255,255,255,0.85); }
+
+/* -- High board section ------------------------------------- */
+.board-section {
+    padding: 40px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Team Manager card */
+.manager-card-wrapper {
+    display: flex;
+    flex: 0 0 auto;
+    width: 28%;
+    min-width: 180px;
+    max-width: 380px;
+}
+.manager-sq-card {
+    width: 100%;
+}
+
+/* Manager vertical role text */
+.manager-role {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 100%;
+    margin: 0;
+    font-family: "Natural Precision";
+    color: rgba(212,175,55,0.95);
+    font-size: clamp(10px, 1vw, 14px);
+    letter-spacing: 0.2em;
+}
+
+/* Directors 6-card grid */
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    flex: 1 1 auto;
+}
+
+/* -- Sub-team detail: leader beside members grid ------------ */
+.subteam-detail-content {
+    display: flex;
+    flex-direction: column;
+}
+.detail-board-row {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+    padding: 8px 0 20px;
+}
+.detail-leader-grid {
+    flex: 0 0 auto;
+    width: 22%;
+    min-width: 130px;
+    max-width: 220px;
+}
+.detail-leader-card {
+    width: 100%;
+}
+.members-sq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+    flex: 1 1 auto;
+}
+
+/* -- Responsive --------------------------------------------- */
+
+/* Tablet: 601�900px */
+@media (max-width: 900px) {
+    .board-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 30px 16px 16px;
+    }
+    .manager-card-wrapper {
+        width: 60%;
+        max-width: 300px;
+        min-width: 0;
+    }
+    .board-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    .sq-card-name { font-size: clamp(12px, 2.5vw, 18px); }
+    .sq-card-role { font-size: clamp(10px, 1.8vw, 13px); }
+    .members-sq-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+    .detail-leader-grid { width: 30%; min-width: 110px; }
+}
+
+/* Mobile: =600px */
+@media (max-width: 600px) {
+    .board-section { padding: 24px 10px 12px; gap: 12px; }
+    .manager-card-wrapper { width: 75%; max-width: 240px; }
+    .board-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .sq-card-name { font-size: clamp(11px, 3.5vw, 16px); }
+    .sq-card-role { font-size: clamp(9px, 2.5vw, 12px); }
+    .sq-card-info { padding: 24px 10px 10px; }
+    .members-sq-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .detail-board-row { flex-direction: column; }
+    .detail-leader-grid { width: 100%; max-width: 100%; }
+    .directors-carousel-header .main-heading { font-size: 22px; }
+    .director-slide-heading { font-size: 18px; }
+    .subteams-inner-swiper { padding: 4px 28px 6px; }
 }
