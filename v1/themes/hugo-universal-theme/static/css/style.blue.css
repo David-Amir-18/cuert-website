@@ -2254,7 +2254,7 @@ fieldset[disabled] .btn-template-primary.active {
     line-height: 1.5;
     letter-spacing: 0.08em;
 }
-
+/*
 .portfolio-showcase p.lead {
     color: #555555;
     margin-bottom: 20px;
@@ -2744,7 +2744,7 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-post #comment-form {
     margin-bottom: 20px;
 }
-/*
+*/
 .product {
     background: #fff;
     border-bottom: solid 1px #e6e6e6;
@@ -4506,4 +4506,3 @@ a.list-group-item.active>.badge,
     display: flex;
     justify-content: space-between;
 }
-*/
