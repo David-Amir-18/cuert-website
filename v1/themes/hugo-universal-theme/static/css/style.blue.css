@@ -1761,7 +1761,7 @@ fieldset[disabled] .btn-template-primary.active {
     text-align: center;
     margin-bottom: 40px;
 }
-/*
+
 .box-simple .icon {
     color: var(--primary-accent);
     border-color: var(--primary-accent);
@@ -1886,7 +1886,7 @@ fieldset[disabled] .btn-template-primary.active {
     font-size: 18px;
     letter-spacing: 0.08em;
 }
-*/
+/*
 .box-image .name h3 a {
     color: #fff;
     text-decoration: none;
@@ -1950,7 +1950,7 @@ fieldset[disabled] .btn-template-primary.active {
     filter: alpha(opacity=0);
     background: var(--primary-accent);
 }
-
+*/
 .box-image-text .top .name {
     position: absolute;
     width: 100%;
