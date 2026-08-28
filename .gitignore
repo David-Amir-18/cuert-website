@@ -8,3 +8,5 @@ v1/optimize-images.js
 v1/static/img_backup_original
 delete-unused-images.ps1
 unused-images.txt
+v1/find-unused-css.js
+v1/unused-css-report.md
