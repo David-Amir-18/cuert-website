@@ -1761,7 +1761,7 @@ fieldset[disabled] .btn-template-primary.active {
     text-align: center;
     margin-bottom: 40px;
 }
-
+/*
 .box-simple .icon {
     color: var(--primary-accent);
     border-color: var(--primary-accent);
@@ -1886,7 +1886,7 @@ fieldset[disabled] .btn-template-primary.active {
     font-size: 18px;
     letter-spacing: 0.08em;
 }
-
+*/
 .box-image .name h3 a {
     color: #fff;
     text-decoration: none;
@@ -2006,7 +2006,7 @@ fieldset[disabled] .btn-template-primary.active {
 .box-image-text .content p {
     color: #999999;
 }
-/*
+
 .box-image-text:hover .bg {
     filter: alpha(opacity=70);
 }
@@ -2254,7 +2254,7 @@ fieldset[disabled] .btn-template-primary.active {
     line-height: 1.5;
     letter-spacing: 0.08em;
 }
-*/
+
 .portfolio-showcase p.lead {
     color: #555555;
     margin-bottom: 20px;
