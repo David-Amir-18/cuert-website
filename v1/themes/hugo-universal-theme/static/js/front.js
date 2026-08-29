@@ -140,7 +140,8 @@ function sliders () {
       paginationSpeed: ($('.cars-carousal').attr('data-pagination-speed')),
       singleItem: true,
       navigation: true,
-      navigationText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>']
+      navigationText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
+      autoHeight: true
     })
   }
 }

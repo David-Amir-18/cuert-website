@@ -1,7 +1,7 @@
 ---
 featured: false
 name: Horus
-thumbnail: /img/_eco3252__1_-removebg-preview.png
+thumbnail: /img/cars/proto.png
 class: Prototype
 year: 2017
 maxSpeed: 70

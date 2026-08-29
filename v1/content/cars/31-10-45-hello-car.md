@@ -1,7 +1,7 @@
 ---
 featured: true
 name: "Anubis "
-thumbnail: /img/img_9197__1_-removebg-preview.png
+thumbnail: /img/cars/urban.png
 class: Urban Concept
 year: 2014
 maxSpeed: 50
