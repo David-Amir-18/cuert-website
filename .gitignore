@@ -10,3 +10,5 @@ delete-unused-images.ps1
 unused-images.txt
 v1/find-unused-css.js
 v1/unused-css-report.md
+v1/themes/hugo-universal-theme/static/css/style.blue.css.cleaned-preview.css
+v1/themes/hugo-universal-theme/static/css/style.blue.css.removed-selectors.md
