@@ -10,7 +10,7 @@
   {{ $boardPage := index (where $allPages "Params.isDirectorsBoard" true) 0 }}
 
   {{ with $boardPage }}
-  <div class="main-heading heading">Meet Our Board of Directors</div>
+  <p class="main-heading heading">Meet Our Board of <br><span class="span-directors">Directors</span></p>
   <section class="team-section board-section">
 
     {{/* Team Manager � single centered square card */}}

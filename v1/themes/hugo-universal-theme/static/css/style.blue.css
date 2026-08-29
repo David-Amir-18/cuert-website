@@ -1488,6 +1488,11 @@ fieldset[disabled] .btn-template-transparent-black.active {
     text-align: center;
   }
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  #heading-breadcrumbs {
+    padding-top: 150px; 
+  }
+}
 
 #heading-breadcrumbs ul.breadcrumb {
   margin-top: 5px;

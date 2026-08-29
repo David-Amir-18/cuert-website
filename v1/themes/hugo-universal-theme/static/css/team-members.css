@@ -36,6 +36,14 @@ a  { text-decoration: none; }
     padding: 0;
 }
 
+.span-directors {
+    color: #d4af37;
+    font-family: "Natural Precision", Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+@media (max-width: 767px) { .span-directors { font-size: 40px; } }
+
 /* Sub-team description */
 .sub-team-p > p {
     color: #555;
