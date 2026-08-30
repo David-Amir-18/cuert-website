@@ -297,6 +297,7 @@ a  { text-decoration: none; }
     .member-grid-img-div { width: 78px; height: 78px; }
     .directors-carousel-header { margin: 16px auto 6px; }
     .manager-card .head-card-img-div { width: 120px; height: 120px; }
+    .manager-image{object-position: top;}
 }
 
 
@@ -443,6 +444,7 @@ a  { text-decoration: none; }
     .sq-card-role { font-size: clamp(10px, 1.8vw, 13px); }
     .members-sq-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
     .detail-leader-grid { width: 30%; min-width: 110px; }
+    .manager-image{object-position: top;}
 }
 
 /* Mobile: =600px */
