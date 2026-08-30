@@ -1,5 +1,5 @@
 
-<div>
+<div >
     <div class="car">
         <div class="col-sm-6">
             <div class="car-img">
@@ -46,30 +46,32 @@
         <div class="row">
             {{ range .Params.achievements }}
             <div class="col-sm-4">
-                <div class="achievement-image">
-                    <img src="{{  replace .image "/v1/static" "" | relURL }}" class="img-responsive" alt="">
-                    <!--{{ if isset .Params "image" }}-->
-                    <!--{{ else }}
-                    <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
-                    {{ end }}-->
-                </div>
-                <div class="car-achievements-info">
-                    <div>
-                        {{ if eq .icon "🏆 Trophy" }}
-                        <img src="{{ "img/trophy.png" | relURL }}" class="img-responsive" alt="">
-                        {{ else if eq .icon "🥇 First" }}
-                        <img src="{{ "img/first.png" | relURL }}" class="img-responsive" alt="">
-                        {{ else if eq .icon "🥈 Second" }}
-                        <img src="{{ "img/second.png" | relURL }}" class="img-responsive" alt="">
-                        {{ else if eq .icon "🥉 Third" }}
-                        <img src="{{ "img/third.png" | relURL }}" class="img-responsive" alt="">
-                        {{ else }}
-                        <img src="{{ "img/star.png" | relURL }}" class="img-responsive" alt="">
-                        {{ end }}
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="{{  replace .image "/v1/static" "" | relURL }}" class="img-responsive" alt="">
+                        <!--{{ if isset .Params "image" }}-->
+                        <!--{{ else }}
+                        <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
+                        {{ end }}-->
                     </div>
-                    <div>
-                        <h5><a href="">{{.achievement}}</a></h5>
-                        <span>{{.year}}</span>
+                    <div class="car-achievements-info achievement-title-wrapper">
+                        <div>
+                            {{ if eq .icon "🏆 Trophy" }}
+                            <img src="{{ "img/trophy.png" | relURL }}" class="img-responsive" alt="">
+                            {{ else if eq .icon "🥇 First" }}
+                            <img src="{{ "img/first.png" | relURL }}" class="img-responsive" alt="">
+                            {{ else if eq .icon "🥈 Second" }}
+                            <img src="{{ "img/second.png" | relURL }}" class="img-responsive" alt="">
+                            {{ else if eq .icon "🥉 Third" }}
+                            <img src="{{ "img/third.png" | relURL }}" class="img-responsive" alt="">
+                            {{ else }}
+                            <img src="{{ "img/star.png" | relURL }}" class="img-responsive" alt="">
+                            {{ end }}
+                            <span class="achievement-year">{{.year}}</span>
+                        </div>
+                        <div class="achievement-title-wrapper">
+                            <h5 ><a href="" class="achievement-title" id="achievement-title">{{.achievement}}</a></h5>
+                        </div>
                     </div>
                 </div>
             </div>
