@@ -63,16 +63,16 @@ staticDir = ["static", "v1/static/"]
     url = "https://www.facebook.com/ShellEcoMarathonCUT"
     pre = "<i class='fab fa-facebook-f'></i>"
 
-[[menu.topbar]]
-    weight = 2
-    name = "Twitter"
-    url = "https://twitter.com/CUEcoRacingTeam"
-    pre = "<i class='fab fa-twitter'></i>"
+# [[menu.topbar]]
+#     weight = 2
+#     name = "Twitter"
+#     url = "https://twitter.com/CUEcoRacingTeam"
+#     pre = "<i class='fab fa-twitter'></i>"
 
 [[menu.topbar]]
     weight = 2
     name = "Instagram"
-    url = "https://www.instagram.com/cuecoracingteam/"
+    url = "https://www.instagram.com/cu_ert"
     pre = "<i class='fab fa-instagram'></i>"
 
 [[menu.topbar]]
