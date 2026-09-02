@@ -1401,6 +1401,9 @@ fieldset[disabled] .btn-template-transparent-black.active {
   color: #fff;
   text-decoration: none;
 }
+.box-image-text .top .image img{
+  object-position:center 65%;
+}
 
 .box-image-text .top .text {
   position: absolute;
