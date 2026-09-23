@@ -3,7 +3,7 @@ featured: false
 name: Horus
 thumbnail: /img/cars/proto.png
 class: Prototype
-year: 2017
+year: 2023
 maxSpeed: 70
 distancePerLiter: 249
 unit: Distance / KWh
@@ -24,4 +24,4 @@ achievements:
     image: /v1/static/img/_eco3259-1-1-.jpg
     icon: 🌟 Award
 ---
-Our prototype concept vehicle "Ra" is designed to achieve the highest kilometers with the least kilowatts per hour.
+Our prototype concept vehicle "Horus" is designed to achieve the highest kilometers with the least kilowatts per hour.

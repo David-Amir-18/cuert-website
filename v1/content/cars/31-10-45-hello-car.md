@@ -3,7 +3,7 @@ featured: true
 name: "Anubis "
 thumbnail: /img/cars/urban.png
 class: Urban Concept
-year: 2014
+year: 2018
 maxSpeed: 50
 distancePerLiter: 120
 unit: Distance / Liter
