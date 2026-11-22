@@ -71,13 +71,19 @@
   translation: "on"
 
 - id: 404Error
-  translation: "Error 404: Page not found"
+  translation: "Error 404 · Page not found"
 
 - id: 404Message
-  translation: "We are sorry – this page is not here anymore"
+  translation: "You've gone off track"
+
+- id: 404Body
+  translation: "This page doesn't exist or has moved. Head back to the homepage, or pick a section below."
 
 - id: 404NavHome
   translation: "Go to homepage"
+
+- id: 404Sections
+  translation: "Site sections"
 
 - id: January
   translation: January

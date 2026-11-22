@@ -2,44 +2,50 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-    {{ partial "headers.html" . }} {{ partial "custom_headers.html" . }}
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
 </head>
 
 <body>
 
-    <div id="all" style="
-    background: url('../img/fixed-background-2.png');
-    background-color: #21a99f;
-    background-blend-mode: multiply;
-    background-size: cover;">
+    <div id="all">
 
-        <div id="content" style="
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;">
+        {{ partial "nav.html" . }}
+
+        {{/* Same black band other pages get from breadcrumbs.html, minus the title, so the white nav stays readable. */}}
+        <div id="heading-breadcrumbs" class="not-found__band" aria-hidden="true"><div class="dark-mask"></div></div>
+
+        <main id="content" class="not-found">
             <div class="container">
+                <div class="not-found__inner">
 
-                <div class="col-md-6 col-md-offset-3" id="error-page">
+                    <p class="not-found__code" aria-hidden="true">404</p>
+                    <div class="not-found__kerb" aria-hidden="true"></div>
 
-                    <div class="box">
+                    <p class="not-found__eyebrow">{{ i18n "404Error" }}</p>
+                    <h1 class="not-found__title">{{ i18n "404Message" }}</h1>
+                    <p class="not-found__body">{{ i18n "404Body" }}</p>
 
-                        <h3>{{ i18n "404Message" | markdownify }}</h3>
-                        <h4 class="text-muted">{{ i18n "404Error" | markdownify }}</h4>
+                    <a class="not-found__primary" href="{{ "/" | relLangURL }}">{{ i18n "404NavHome" }}</a>
 
-                        <p class="buttons"><a href="{{ " / " | relURL }}" class="btn btn-template-main"><i class="fas fa-home"></i> {{ i18n "404NavHome" | markdownify }}</a>
-                        </p>
-                    </div>
-
+                    <nav class="not-found__links" aria-label="{{ i18n "404Sections" }}">
+                        <ul>
+                            {{ range .Site.Menus.main }}{{ if ne .URL "/" }}
+                            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                            {{ end }}{{ end }}
+                        </ul>
+                    </nav>
 
                 </div>
-                <!-- /.col-sm-6 -->
             </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#content -->
+        </main>
+
+        {{ partial "footer.html" . }}
 
     </div>
+
+    {{ partial "scripts.html" . }}
+
 </body>
 
 </html>
