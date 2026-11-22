@@ -1,4 +1,6 @@
 featured: true
-name: Innovators Support Fund
+name: ISF
 image: /img/sponsors/isf.png
 url: https://www.isf.gov.eg/
+category: strategic
+weight: 3

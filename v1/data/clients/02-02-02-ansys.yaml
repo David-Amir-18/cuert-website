@@ -2,3 +2,5 @@ featured: true
 name: Ansys
 image: /img/sponsors/ANSYS_logo.png
 url: https://ansys.synopsys.com/
+category: software
+weight: 1

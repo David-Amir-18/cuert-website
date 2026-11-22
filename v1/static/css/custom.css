@@ -17,3 +17,81 @@
     min-height: 230px;
   }
   
+
+/* Sponsors: main partner card + tier grid */
+.sponsors-section { --sp-border: #eeeeee; --sp-text: #555555; --sp-tag-bg: #f9e6b8; --sp-tag-text: #5c4310; --sp-gap: 24px; --tile-pad: 18px; }
+
+/* Shared skewed-tag motif (echoes the .heading h2 highlight) */
+.sponsor-tag {
+  display: inline-block; position: relative; z-index: 1;
+  font-family: "Natural Precision", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; letter-spacing: 0.06em; font-size: 15px; line-height: 1;
+  color: var(--sp-tag-text); padding: 8px 18px;
+}
+.sponsor-tag::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--sp-tag-bg); transform: skewX(-15deg);
+}
+
+/* Main partner */
+.sponsor-main {
+  position: relative; text-align: center;
+  border: 1px solid var(--sp-border); border-top: 4px solid var(--primary-accent);
+  padding: 22px 24px 40px; margin-bottom: 48px; background: #fff;
+}
+.sponsor-main .sponsor-tag { margin-bottom: 24px; }
+.sponsor-main-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 48px; }
+.sponsor-main-link { display: block; width: 100%; max-width: 560px; margin: 0 auto; }
+.sponsor-main-link img { display: block; width: 100%; height: auto; }
+
+/* Tier grid: 5 columns, each tier spans its logo count */
+.sponsor-tiers { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 40px var(--sp-gap); }
+.sponsor-tier { grid-column: span var(--span, 1); min-width: 0; display: flex; flex-direction: column; }
+.sponsor-tier > .sponsor-tiles { margin-top: auto; } /* keep tiles aligned when a title wraps */
+.sponsor-tier-title {
+  font-family: "Natural Precision", Helvetica, Arial, sans-serif;
+  font-size: 17px; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--sp-text); margin: 0 0 14px; padding-left: 16px; position: relative;
+}
+.sponsor-tier-title::before {
+  content: ""; position: absolute; left: 0; top: 2px; bottom: 2px; width: 6px;
+  background: var(--primary-accent); transform: skewX(-15deg);
+}
+.sponsor-tiles {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(var(--span, 1), minmax(0, 1fr)); gap: var(--sp-gap);
+}
+.sponsor-tile {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 3 / 2; padding: var(--tile-pad); background: #fff;
+  border: 1px solid var(--sp-border);
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+/* --scale (optional, per logo) lets a logo grow into the tile padding, never past the border */
+.sponsor-tile img { display: block;
+  max-width: min(calc(100% * var(--scale, 1)), calc(100% + 2 * var(--tile-pad) - 8px));
+  max-height: min(calc(100% * var(--scale, 1)), calc(100% + 2 * var(--tile-pad) - 8px)); width: auto; height: auto; object-fit: contain; }
+a.sponsor-tile:hover { border-color: var(--primary-accent); box-shadow: 0 6px 18px rgba(217, 166, 74, 0.18); transform: translateY(-2px); }
+a.sponsor-tile:focus-visible, .sponsor-main-link:focus-visible { outline: 3px solid var(--navbar-border-top, #a88214); outline-offset: 3px; }
+
+/* Tablet: same idea on a 4-column grid */
+@media (max-width: 991px) {
+  .sponsor-tiers { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 18px; }
+  .sponsor-tier { grid-column: span var(--tspan, 1); }
+  .sponsor-tiles { grid-template-columns: repeat(var(--tspan, 1), minmax(0, 1fr)); gap: 18px; }
+}
+/* Phone: 2 tiles per row */
+@media (max-width: 575px) {
+  .sponsors-section { --sp-gap: 14px; --tile-pad: 12px; }
+  .sponsor-tiers { grid-template-columns: 1fr; gap: 28px; }
+  .sponsor-tier { grid-column: auto; }
+  /* 2 per row; flex (not grid) so an odd last logo is centred instead of stuck left */
+  .sponsor-tiles { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-gap); }
+  .sponsor-tiles > li { flex: 0 0 calc(50% - var(--sp-gap) / 2); min-width: 0; }
+  .sponsor-main { padding: 18px 16px 28px; }
+  .sponsor-main-link { max-width: 320px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-tile { transition: none; }
+  a.sponsor-tile:hover { transform: none; }
+}

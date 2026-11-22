@@ -1,4 +1,6 @@
-featured: false
-name: Cairo University
-image: /v1/static/img/cairo_university_crest.png
+featured: true
+name: Faculty of Engineering Cairo University
+image: /img/cairo_university_crest.png
 url: https://cu.edu.eg/ar/Home
+category: academic
+weight: 1

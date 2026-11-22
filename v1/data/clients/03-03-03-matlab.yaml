@@ -2,3 +2,5 @@ featured: true
 name: Matlab
 image: /img/sponsors/MATLAB-logo.png
 url: https://www.mathworks.com/products/matlab.html
+category: software
+weight: 3

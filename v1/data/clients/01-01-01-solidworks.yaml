@@ -2,3 +2,5 @@ featured: true
 name: SolidWorks
 image: /img/sponsors/SolidWorks.png
 url: https://www.solidworks.com/
+category: software
+weight: 2

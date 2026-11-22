@@ -1,4 +1,6 @@
 featured: true
-name: Marine Company
+name: Marine
 image: /img/sponsors/marine.png
 url: https://www.marine-co.com/
+category: strategic
+weight: 2

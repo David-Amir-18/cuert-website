@@ -1,4 +1,7 @@
 featured: true
-name: Almah
+name: Almah powered by ECB
 image: /img/sponsors/almah.png
 url: https://www.linkedin.com/company/almah-official/
+category: apparel
+weight: 1
+scale: 1.25

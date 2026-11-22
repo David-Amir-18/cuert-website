@@ -1,4 +1,6 @@
 featured: true
-name: Monza
+name: Monza Racing Simulator
 image: /img/sponsors/monza.png
 url: https://www.instagram.com/monza_racing_hub/
+category: strategic
+weight: 4

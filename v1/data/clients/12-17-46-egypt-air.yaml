@@ -1,4 +1,6 @@
 featured: true
-name: EGYPT AIR
+name: EgyptAir
 image: /img/egypt_air.png
 url: https://www.egyptair.com/en/Pages/HomePage.aspx
+category: strategic
+weight: 1
