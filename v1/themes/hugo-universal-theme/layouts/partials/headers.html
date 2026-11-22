@@ -2,6 +2,7 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Vd7MZL8cv6oKE4aRFF86gdUtfONiojWL1hvlVjiu3N4" />
 {{ $title_plain := .Title | markdownify }}
 {{/* Per-page title. Car and team entries have no `title`, so fall back to their `name` / `team` field. */}}
 {{ $page_title := .Title | default .Params.name | default .Params.team | plainify | strings.TrimSpace }}
