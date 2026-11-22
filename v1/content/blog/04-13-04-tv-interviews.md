@@ -10,20 +10,12 @@ tags:
   - environment
   - racing
 ---
-Who can deny the crucial effect of media on our daily lives? Media holds great influence over almost everything, shaping public opinion and behaviors through various forms such as television, newspapers, and the internet. It plays a significant role in shaping our perceptions of the world, influencing our beliefs, values, and decision-making processes.
-
- 
-
-Communication is a top priority for our team, alongside the technical aspects. As we are dedicated to both racing and the environment, aiming to cover the longest distance with the least possible energy, we also prioritize engaging with society. Our team consistently strives to reach a broad audience, extending beyond our immediate colleagues. This commitment is evident in our TV interviews and media contributions.
+Communication matters to our team as much as the technical work. We want people outside the university to know what we build, why it matters for the environment, and what it takes to get a car to the competition.
 
 ![](/img/view.png)
 
-The team has made appearances on several TV interviews, including those with Ahmed Moussa on Sada El-balad channel, Mehwar channel, and DMC channel with Ahmed Ramy. Our recognition extends to newspaper platforms such as Youm7, Dot Masr, and Al-bawaba news. Notably, the team has also been featured in an article by Scene Now.
+The team has appeared on several TV programs, including Ahmed Moussa's show on Sada El-Balad, Mehwar channel, and DMC with Ahmed Ramy. Youm7, Dot Masr, and Al-Bawaba News have covered us, and Scene Now published a feature article about the team.
 
 ![](/img/youm7.png)
 
-Through our interviews, it becomes evident that the team is passionate about explaining our work and the challenges we face. Whether it's technical hurdles in manufacturing the car or issues related to travel and visa documents, we aim to keep the audience informed. Our environmental commitment is also prominently highlighted.
-
- 
-
-In the media spotlight, we seize the opportunity to articulate not only what we do but also the challenges that come with our mission. Our dedication to innovation, sustainability, and overcoming obstacles is consistently communicated to a wider audience.
+In these interviews we talk openly about our work and the obstacles we face, from technical problems while manufacturing the car to travel and visa paperwork for international competitions. We also use the airtime to explain why energy efficiency matters for the environment.

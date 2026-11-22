@@ -1,5 +1,5 @@
 baseurl = "https://www.cu-eco.org/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-title = "Cairo Uni Eco-Racing Team"
+title = "Cairo University Eco-Racing Team"
 theme = "hugo-universal-theme"
 themesDir = "../v1/themes"
 languageCode = "en-us"
@@ -252,6 +252,4 @@ staticDir = ["static", "v1/static/"]
     enable = false
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
-  author = "authors"

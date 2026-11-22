@@ -15,27 +15,23 @@ tags:
   - ecofriendly
   - recruitment
 ---
-In the pursuit of excellence, the Cairo University Eco Racing Team (CUERT) has set a significant goal over the past few years – winning the coveted Communication Award. Each member of our dedicated team has been resolute in turning this aspiration into reality, and we are proud to say that our collective efforts have borne fruit in 2015, 2021, and 2022.
+Winning the Communication Award has been one of CUERT's main goals for years. We won **1st place in 2015**, then returned to the competition and took **2nd place in both 2021 and 2022**. This is the work behind those results.
 
-In the inaugural year of 2015, CUERT secured the 1st place in the competition, a testament to our commitment to innovation and sustainability. Undeterred by challenges, we rejoined the competition in 2021 and 2022, achieving the 2nd place on both occasions. This consistent success underscores our team's dedication and expertise in the world of eco-racing.
+**School visits.** We started our outreach with young people, visiting MILS, MES, and STEM schools to show students how our eco-friendly cars work.
 
-As an "eco-racing team," our mission goes beyond winning accolades – we aim to spread the concept of an eco-friendly environment, reaching audiences across all age groups. Initiating our outreach efforts with the youth, we visited MILS, MES, and STEM schools, presenting and explaining the intricacies of our eco-friendly vehicles.
+**An online campaign during COVID-19.** When the lockdowns hit in 2020, we moved our awareness campaign online and ran it from our homes, reaching a large audience.
 
-The year 2020 brought a unique challenge in the form of the COVID-19 pandemic. However, true to CUERT's spirit, we adapted and overcame. Even in the face of lockdowns, our team launched an impactful online awareness campaign from the confines of our homes, reaching a substantial audience and maintaining our commitment to environmental consciousness.
+**Exhibitions.** We showcased our cars at the YLF Leader's League and the EBDAA competition, and presented our work to guests including the Minister of Youth Ashraf Sobhy, the Minister of Higher Education Khaled Abd Elghafar, and businessman Ahmed Abo Hashima.
 
-Our dedication garnered us an opportunity to showcase our vehicles at prestigious events like the YLF Leader's League and EBDAA competition, where we had the honor of presenting our work to esteemed guests, including the Minister of Youth Ashraf Sobhy, the Egyptian Minister of Higher Education Khaled Abd Elghafar, and the young businessman Ahmed Abo Hashima.
+**TV coverage.** Al Hayah, Al Oula, Al Tanya, DMC, and Ten TV featured our cars and gave us airtime to talk about our projects and our vision for sustainable transport.
 
-The recognition didn't stop there. Prominent TV channels, such as "Al Hayah," "Al Oula," "Al Tanya," "DMC," and "Ten TV," expressed a keen interest in our vehicles and featured us, providing a platform to discuss our projects and share our vision for a sustainable future.
+**Recruitment.** Our recruitment campaign drew 437 applicants.
 
-The journey continued with a successful recruitment campaign, attracting 437 eager applicants who share our passion for innovation and environmental responsibility. This influx of interest is a testament to the growing impact and influence of CUERT within the community.
+**Giving back.** Every year we visit the 57357 Children's Cancer Hospital and spend the day doing activities with the children.
 
-Celebrating our victories is important, but CUERT believes in giving back. Our annual visit to 57357 involved engaging activities with children, spreading joy and making a positive impact beyond the racetrack.
+**Social media.** We share our work, results, and challenges on Instagram, Facebook, LinkedIn, and YouTube.
 
-In addition to our offline endeavors, CUERT diligently documents our journey through various platforms, ensuring our presence on Instagram, Facebook, LinkedIn, and YouTube. These outlets serve as windows into our world, allowing us to share our triumphs, challenges, and the core values that drive our team.
-
-CUERT's commitment to excellence, innovation, and community impact remains unwavering. The journey with the Communication Award is not just about winning accolades; it's about leaving a lasting legacy of eco-friendly practices and inspiring others to join us in building a sustainable future.
-
-
+For us, the award recognizes the outreach side of eco-racing: getting more people, of every age, to care about energy efficiency and the environment. We plan to keep building on it every season.
 
 ![](/img/57357-.jpg)
 

@@ -3,7 +3,9 @@
 <meta name="googlebot" content="index,follow,snippet,archive">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ $title_plain := .Title | markdownify }}
-<title>Cairo Universty Eco-Racing Team</title>
+{{/* Per-page title. Car and team entries have no `title`, so fall back to their `name` / `team` field. */}}
+{{ $page_title := .Title | default .Params.name | default .Params.team | plainify | strings.TrimSpace }}
+<title>{{ if or .IsHome (not $page_title) }}{{ .Site.Title }}{{ else }}{{ $page_title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="author" content="{{ .Param "author" }}" />
 {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}
 {{ if isset .Params "tags" }}{{ range .Params.tags }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}

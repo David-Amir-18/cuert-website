@@ -1,5 +1,6 @@
 +++
 title = "Contact"
+description = "Contact Cairo University Eco-Racing Team about sponsorship, partnerships, or joining the team. Faculty of Engineering, Cairo University, Giza, Egypt."
 id = "contact"
 +++
 

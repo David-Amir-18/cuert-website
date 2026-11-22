@@ -18,15 +18,12 @@ Located in Cairo, Egypt, the Children's Cancer Hospital 57357 stands as a beacon
 ### The Power of Inspiration:
 
 As we entered the hospital, we were greeted by an atmosphere filled with resilience, strength, and hope. The vibrant colors adorning the walls and the cheerful smiles on the faces of both patients and staff instantly lifted our spirits. The children we met radiated an unwavering determination despite the challenges they faced. Their unwavering spirit served as a powerful reminder of the strength of the human spirit and the importance of cherishing every moment.
-Shared Aspirations:
+
+### Shared Aspirations:
 
 During our visit, we had the opportunity to engage in heartfelt conversations with the children and their families. We listened to their stories, dreams, and aspirations, and were deeply moved by their resilience and determination to overcome adversity. 
 
 The children expressed their love for motorsports and their dreams of becoming racers one day. Their unwavering spirit and passion left an indelible mark on our team, reminding us of the power of dreams and the importance of pursuing them relentlessly.
-
-
-Our team embarked on a mission to bring smiles to the faces of young cancer patients at Children’s Cancer Hospital 57357. Stepping into the hospital, we were immediately struck by the resilience and strength exuded by both the patients and the medical staff. The sight of colorful walls and the sound of infectious laughter instantly lifted our spirits, setting the stage for an unforgettable day.
-
 
 During our visit, we organized a range of engaging activities, such as interactive games, arts and crafts sessions, and storytelling sessions. The children's eyes sparkled with delight as they engaged in these joyful moments, momentarily forgetting the challenges they faced. We also shared our passion for racing and showcasing our eco-friendly race car. The children were fascinated by the technology and our car, and their excitement was palpable.
 
@@ -40,4 +37,4 @@ Furthermore, the visits taught us valuable lessons about gratitude, perseverance
 ### Conclusion:
 
 Our eco racing team's visits to the Children's Cancer Hospital 57357 in both 2021 and 2022 were transformative experiences that touched our hearts and those of the incredible children we met. These visits reinforced our commitment to using our passion for racing to make a positive impact on society. We pledged to continue supporting the hospital, raising awareness for pediatric cancer research, and bringing smiles to the faces of these courageous children.
-By sharing our love for racing, inspiring dreams, and fostering hope, we believe in a future where every child, regardless of their circumstances, can pursue their aspirations. Together, we can race towards a world where joy, resilience, and the pursuit of dreams prevail
+By sharing our love for racing, inspiring dreams, and fostering hope, we believe in a future where every child, regardless of their circumstances, can pursue their aspirations. Together, we can race towards a world where joy, resilience, and the pursuit of dreams prevail.
